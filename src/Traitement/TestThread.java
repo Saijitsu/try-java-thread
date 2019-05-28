@@ -6,6 +6,7 @@ public class TestThread {
 		Runnable runnable = new Traitement();
 
 		for (int i = 0; i < 10; i++) {
+			System.out.println("Entry value: " + i);
 			Thread thread = new Thread(runnable);
 			thread.start();
 		}
