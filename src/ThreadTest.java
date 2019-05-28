@@ -11,7 +11,7 @@ public class ThreadTest extends Thread {
 	public void run() {
 		try {
 			for (int i = 0; i < 3; i++) {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 				System.out.println(getName() + " Thread entry: " + this.id + " is running");
 			}
 		} catch (
